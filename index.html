@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <script src="testing.js"></script>
+    <title>Learning HTML!</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        h1 {
+            color: red;
+            font-family: monaco;
+            font-size: 300%;
+            border: 10px solid black;
+            padding: 10px;
+            margin: 30px;
+            text-align: center;
+        }
+        p#p01 {
+            color: green;
+        }
+        p.p01 {
+            color: red;
+        }
+        a:link {
+            color:green;
+            text-decoration:none;
+        }
+        a:visited {
+            color:purple;
+            text-decoration:none;
+        }
+        a:hover {
+            color:red;
+        }
+        a:active {
+            color:yellow;
+        }
+        table {
+            border-spacing: 15px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        #t01 {
+            width: 50%;
+            background-color: #f1f1c1;
+            float: right;
+        }
+        #t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        #t01 th {
+            color:white;
+            background-color: black;
+        }
+        #ul01 li {
+            display: inline;
+            background-color: black;
+            color:white;
+            padding: 10px 20px;
+            border-radius: 4px 4px 20px 4px;
+        }
+        #ul01 li:hover {
+            background-color: orange;
+        }
+        #ul01 {
+            padding: 0;
+        }
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        #animation {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <h1 title="This is a tooltip">My first heading!</h1>
+        <h2 style="color:blue;">This is a heading!</h2>
+        <h6>This is also a heading!</h6>
+        <p style="font-family:courier; font-size:300%; text-align:center;"
+        onmouseover="this.innerHTML = 'Because it doesn\'t want to be'">
+            Why isn't this syntax highlighted
+        </p>
+        <a href="https://google.com/" target="_blank">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google.com" title="More &#8221;tooltips!" style="width:272px; height:92px;">
+        </a>
+        <hr>
+    </p>
+    <pre>
+        The solution
+        is here   for good.
+    </pre>
+    <h2>HTML <small>small</small> formatting.</h2>
+    <h2>HTML <mark>marked</mark> formatting.</h2>
+    <p>My favorite <ins cite="http://www.google.com">color</ins> is <del>red</del> yellow.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+    <p id="p01">I am different!</p>
+    <p id="p01">I am different!</p>
+    <p class="p01">I am different!</p>
+    <p class="p01">I am different!</p>
+    <div id="d01">
+    <a href="http://store.steampowered.com/app/8870/" title="Click here!" target="_blank">
+        Best game of all time!
+    </a>
+    </div>
+    <table id="t01">
+        <caption>Random things</caption>
+        <tbody>
+            <tr>
+                <th colspan="2">Number - Name</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fluffy</td>
+                <td>Too high</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tasha</td>
+                <td>Meh</td>
+            </tr>
+        </tbody>
+    </table>
+    <iframe src="http://w3schools.com/" name="frame-1"
+        style="width:48%;height:300px;border:none;float:left;">
+        Your browser sucks!
+    </iframe>
+    <p style="clear:right;margin-left:650px;"><a href="http://clojure.org/" target="frame-1">To Clojure!</a></p>
+
+    <p style="clear:both;">Replace these with hrefs and you have a good-looking menu:</p>
+    <ul id="ul01">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+    </ul>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>white cold drink</dd>
+        <dd>good for you </dd>
+    </dl>
+    <form>
+        Name:<br>
+        <input type="text" name="name"><br>
+        Date:<br>
+        <input type="text" name="date"><br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+    </form>
+    <form action="http://google.com/search" method="get" target="_blank">
+        <fieldset>
+            <legend>Google</legend>
+            Google something:
+            <input type="text" name="q" value="GOOG">
+            <input type="submit" value="Search">
+        </fieldset>
+    </form>
+    <p id="date"></p>
+    <script>
+        setInterval(function() {document.getElementById("date").innerHTML = Date();}, 1000);
+    </script>
+    <h1>My first Javascript animation!</h1>
+    <p><button onclick="myAnimate()">Click me!</button></p>
+    <div id="container">
+        <div id="animation"></div>
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html>
