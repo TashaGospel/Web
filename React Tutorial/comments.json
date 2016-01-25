@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1388534400000,
+        "author": "Pete Hunt",
+        "text": "Hey there!"
+    },
+    {
+        "id": 1420070400000,
+        "author": "Paul O\u2019Shannessy",
+        "text": "React is *great*!"
+    },
+    {
+        "id": 1453294483085,
+        "author": "Peter",
+        "text": "Yeah, it is!"
+    },
+    {
+        "id": 1453294496118,
+        "author": "Jane Wilde",
+        "text": "I wonder what Steve is doing."
+    },
+    {
+        "id": 1453374518514,
+        "author": "Stephen Hawking",
+        "text": "Just idling about. How about you Jane?"
+    },
+    {
+        "id": 1453374549947,
+        "author": "Jane Wilde",
+        "text": "I'm also not doing much."
+    },
+    {
+        "id": 1453375102512,
+        "author": "Stephen Hawking",
+        "text": "How is you life recently?"
+    },
+    {
+        "id": 1453375121067,
+        "author": "Jane Wilde",
+        "text": "It's okay. Nothing much to report. You?"
+    },
+    {
+        "id": 1453382006445,
+        "author": "Stephen Hawking",
+        "text": "Just got knighted. No big deal."
+    }
+]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messing around with HTML!</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#demo").html("Hello!");
+            $("#demo").click(function() {
+                $(this).hide();
+            });
+            $("input").focus(function() {
+                $(this).css("background-color","yellow");
+            });
+            $("input").blur(function() {
+                $(this).css("background-color","white");
+            });
+            $("p").on({
+                mouseenter: function() {
+                    $(this).css({
+                        "background-color": "yellow",
+                        "color": "red"
+                    });
+                },
+                mouseleave: function() {
+                    $(this).css({
+                        "background-color": "white",
+                        "color": "black"
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id = "d1">
+        <p id="demo">What the hell?</p>
+        <input type="text">
+        <input type="text">
+    </div>
+</body>
+</html>
+

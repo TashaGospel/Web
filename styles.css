@@ -1,0 +1,21 @@
+ul.topnav-container {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li.topnav {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 0;
+	color: green;
+	background-color: #F1F1F1;
+	width: 50px;
+}
+
+li.topnav:hover {
+	background-color: #555;
+	color: white;
+}
